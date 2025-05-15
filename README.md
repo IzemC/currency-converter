@@ -34,7 +34,7 @@
 
 # Clone repository
 git clone https://github.com/izemc/currency-converter.git
-cd currency-converter-api
+cd currency-converter
 
 # Start services
 docker-compose up -d --build
