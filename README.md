@@ -33,7 +33,7 @@
 ```bash
 
 # Clone repository
-git clone https://github.com/your-repo/currency-converter-api.git
+git clone https://github.com/izemc/currency-converter.git
 cd currency-converter-api
 
 # Start services
