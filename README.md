@@ -66,7 +66,7 @@ The system automatically seeds the following users on startup:
 
 ### Authentication
 
-**Endpoint**: `POST /api/auth/login`  
+**Endpoint**: `POST /api/v1/Auth/login`  
 **Content-Type**: `application/json`
 
 #### Request Body
