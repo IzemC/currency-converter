@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  currency-converter-api:
+    build: .
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - Seq__ServerUrl=http://seq:5341
+      - Otlp__Endpoint=http://seq:5341/ingest/otlp/v1/logs
+    depends_on:
+      - seq
+
+  seq:
+    image: datalust/seq:latest
+    ports:
+      - "5341:5341"
+      - "5342:80"
+    environment:
+      - ACCEPT_EULA=Y
+    volumes:
+      - seq-data:/data
+
+volumes:
+  seq-data:

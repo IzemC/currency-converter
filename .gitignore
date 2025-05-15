@@ -1,0 +1,7 @@
+## .NET ##
+**/[Bb]in/
+**/[Oo]bj/
+**/.vs/
+**/.vscode/
+*.user
+*.su
